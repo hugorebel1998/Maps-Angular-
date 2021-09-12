@@ -1,0 +1,14 @@
+.zoom{
+    width : 100% !important;
+    height: 100% !important;
+}
+
+#zoom-row{
+    background-color: white;
+    border-radius: 5px;
+    bottom: 50px;
+    left: 50px;
+    padding: 10px;
+    position: absolute;  
+    z-index: 999;
+}

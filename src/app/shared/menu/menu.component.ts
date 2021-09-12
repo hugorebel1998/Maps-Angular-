@@ -15,20 +15,21 @@ export class MenuComponent {
   [
     {
       texto : 'Full-screen', 
-      url   : './mapas/full-screen'
-    },
-    {
-      texto : 'Marcadores', 
-      url   : './mapas/marcadores'
-    },
-    {
-      texto : 'Propiedades', 
-      url   : './mapas/propiedades'
+      url   : '/mapas/full-screen'
     },
     {
       texto : 'Zoom-range', 
-      url   : './mapas/zoom-range'
+      url   : '/mapas/zoom-range'
+    },
+    {
+      texto : 'Marcadores', 
+      url   : '/mapas/marcadores'
+    },
+    {
+      texto : 'Propiedades', 
+      url   : '/mapas/propiedades'
     }
+    
 
   ]
 

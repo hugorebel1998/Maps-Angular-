@@ -1,5 +1,5 @@
 <div class="list-group">
-    <a *ngFor="let mapa of mapas" [routerLink]="[mapa.url]" routerLinkActive="active" class="list-group-item list-group-item-action">
+    <a *ngFor="let mapa of mapas" routerLink="{{mapa.url}}" routerLinkActive="active" class="list-group-item list-group-item-action">
         {{ mapa.texto}}
     </a>
 

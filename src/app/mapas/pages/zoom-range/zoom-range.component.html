@@ -1,1 +1,15 @@
-<p>zoom-range works!</p>
+<div #zoom class="zoom"></div>
+<div class="row" id="zoom-row">
+    <div class="col-md-12">
+        <label for="form-label">
+            Zoom: {{ zoomLevel }}
+        </label>
+        <input type="range" class="form-range" id="customRange1">
+    </div>
+    <div class="col-md-12">
+        <button class="btn btn-primary" (click)="zoomInt()">+</button>
+        <button class="btn btn-primary float-end" (click)="zoomOut()">-</button>
+         
+    </div>
+
+</div>
