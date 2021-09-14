@@ -2,7 +2,7 @@
 <div class="row" id="zoom-row">
     <div class="col-md-12">
         <label for="form-label">
-            Zoom: {{ zoomLevel }}
+            Zoom: {{ zoomLevel | number:'2.0-2'}}
         </label>
         <input type="range" class="form-range" id="customRange1">
     </div>

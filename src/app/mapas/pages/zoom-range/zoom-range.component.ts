@@ -24,6 +24,17 @@ export class ZoomRangeComponent implements AfterViewInit{
       zoom: this.zoomLevel
     });
 
+    this.mapa.on('zoom', (eve) => {
+      this.zoomLevel = this.mapa.getZoom();
+    });
+
+    this.mapa.on('zoom', (eve) => {
+      if (this.mapa.getZoom() > 18) {
+        this.mapa.zoomTo(18)
+      }
+    });
+
+
   }
 
   zoomInt(){
