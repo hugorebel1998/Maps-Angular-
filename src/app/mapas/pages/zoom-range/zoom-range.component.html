@@ -2,9 +2,18 @@
 <div class="row" id="zoom-row">
     <div class="col-md-12">
         <label for="form-label">
-            Zoom: {{ zoomLevel }}
+            Zoom: {{ zoomLevel | number: '2.0-2'}}
+            - Lng,Lat : [ {{ center[0] | number:'2.0-4' }} - {{center[1] | number:'2.0-4' }}]
         </label>
-        <input type="range" class="form-range" id="customRange1">
+        <input 
+        type="range"
+         class="form-range" 
+         [value]="zoomLevel"
+         min="0"
+         max="18"
+         (input)="zooCambio( zoomCambio.value )"
+         #zoomCambio
+         >
     </div>
     <div class="col-md-12">
         <button class="btn btn-primary" (click)="zoomInt()">+</button>
