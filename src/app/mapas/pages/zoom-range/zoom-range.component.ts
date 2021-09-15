@@ -47,5 +47,8 @@ export class ZoomRangeComponent implements AfterViewInit{
     this.mapa.zoomOut();
   }
 
+  zoomCambio(){
+    
+  }
 
 }
