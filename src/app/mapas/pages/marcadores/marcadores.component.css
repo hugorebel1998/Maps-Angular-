@@ -1,0 +1,12 @@
+.marcadores{
+    width : 100% !important;
+    height: 100% !important;
+}
+.list-group{
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+    z-index: 999;
+}
+

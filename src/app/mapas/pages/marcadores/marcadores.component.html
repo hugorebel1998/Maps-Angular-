@@ -1,1 +1,14 @@
-<p>marcadores works!</p>
+<ul class="list-group">
+    <li 
+     class="list-group-item list-group-item-info"
+     (click)="crearMarcador()"
+     >+ Agregar</li>
+
+    <li
+    *ngFor="let marcador of marcadoresArr; index as 'i'"
+    class="list-group-item"
+    (click)="irMarcador( marcador.marker! )"
+    [ngStyle]="{ 'background-color':marcador.color }"
+    >Marcador {{ i + 1}}</li>
+</ul>
+<div #marcadores class="marcadores"></div>
